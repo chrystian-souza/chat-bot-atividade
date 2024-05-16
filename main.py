@@ -1,4 +1,4 @@
-from chatbot import ChatBot
+from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
 bot = ChatBot('Bot')
@@ -6,7 +6,7 @@ bot = ChatBot('Bot')
 trainer = ListTrainer(bot)
 
 trainer.train([
-    'Oi',
+    'Oi b',
     'Olá, como posso ajudar?',
     'Estou procurando passagens aéreas.',
     'Para qual destino e data você está procurando?',
@@ -18,7 +18,7 @@ trainer.train([
     'Perfeito! Posso reservar para você. Preciso apenas de alguns detalhes adicionais.',
     'Ok, obrigado pela ajuda.',
     'De nada! Estou aqui para ajudar. Tenha uma boa viagem!'
-])
+            ])
 
 
 while True:
